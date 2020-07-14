@@ -1,6 +1,6 @@
 # How to record material for virtual presentaions
 
-## Setup
+## Using OBS Studio to Record Video
 
 1. Download the installer for your system and install OBS Studio: [OBS Installation Instructions](https://obsproject.com/wiki/install-instructions)
 2. Open OBS Studio and run through the _AutoConfig Wizard_
@@ -32,3 +32,23 @@
     3. Add your webcam to the bottom corner if you want.
         - To do so, you can just click on the `+` and adding a video capture device. Resize as desired.
     4. OBS Studio makes it easy to switch between scenes. If you would like to record a different ‘thing’ for your recording you might want to add scenes and flip through them while recording live.
+
+## Using Audacity to Record Audio
+
+Recording audio separately from when you make your recording allows you to flub all you want and edit audio as needed without being
+forced to re-do steps in your presentation. It also lets you focus solely on speaking without paying attention to what you are clicking.
+
+1. Download and install [Audacity](https://www.audacityteam.org/download/).
+2. Set Audacity to record stereo. In case you have only a mono mic, recording in stereo will just put the same audio on both channels.
+3. Once you are done recording, click on `File -> Export -> Export as MP3`
+
+## Using Blender to Combine Video and Audio
+
+1. Download Blender from the official [Blender website](https://www.blender.org/download/).
+    1. This is important as your distribution’s Blender may be missing certain codec support and the like.
+2. Open Blender and click on `Video Editing` under `New File`.
+3. Verify that the frame rates on all your videos ar the same (30)
+    1. `mediainfo` provides an easy way to check the framerate.
+4. The following two playlists provide a good overview of Blender
+    1. [Waylight Creations Blender 2.8 Video Editing](https://www.youtube.com/playlist?list=PLlXsqAWo0V6IiiThMKxaezET2sdO7grjQ)
+    2. [Mikeycal Meyers Blender Video Editing 2.7X Series](https://www.youtube.com/playlist?list=PLjyuVPBuorqIhlqZtoIvnAVQ3x18sNev4)
