@@ -1,4 +1,4 @@
-# How to record material for virtual presentaions
+# How to record material for virtual presentations
 
 ## Using OBS Studio to Record Video
 
