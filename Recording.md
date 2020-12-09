@@ -7,20 +7,15 @@ Please report any issues with these instructions [here on github](https://github
   - [Alternatives](#alternatives)
     - [Using wf-recorder (for Wayland)](#using-wf-recorder-for-wayland)
     - [Using QuickTime Player (for macOS)](#using-quicktime-player-for-macos)
-    - [Using simplescreenrecorder (for Xorg)](#using-simplescreenrecorder-for-xorg)
-    - [Using Google Meet](#using-google-meet)
     - [Recording audio separately](#recording-audio-separately)
 
 ## General instructions
 
-1. Name the file like so: `Talk name - 1st Speaker name - 2nd speaker.mp4`
-    - Preferred way is to send the files via Youtube, but we can handle any web storage with reasonable uplink.
-2. It's generally advised to use a mic for recording that is _not_ your laptop's builtin microphone. The audio quality is usually better when using USB microphone.
-3. Additionally to screen recording, you can use an external camera and microphone (even from a phone), and we'll combine them for you.
-    - In such case, you need to record audio (voice) for both recordings, for us to be able to join them properly together.
-    - We'll put the two recordings into a common template ([example](https://www.youtube.com/playlist?list=PLU1vS0speL2Z08BeKSwSqfxPEl3ta5UK3)).
-5. We can also do some video/audio adjustments for you, where suitable (raise audio volume, wide angle cropping, start-end trimming).
-    - If you have any wishes, please forward them with the recording.
+1. Upload your video recording to YouTube (preferably) or any other web storage with reasonable uplink
+    - Be sure your video title contains following information: `Talk name - 1st Speaker name - 2nd speaker name`. Please, use mp4 video format.
+2. We advise you to use a external microphone (_not_ your laptop's microphone). The audio quality is usually better when using external one.
+3. Once you have uploaded your video, go to 'Accepted proposals' on the [CfP site](https://cfp.devconf.info/acceptedproposals/28) to submit the link to your recorded video.
+4. If you experience any issues, send us email at [speakers@devconf.cz](speakers@devconf.cz) and we will work with you to figure out alternate options.
 
 _ _ _ _
 
@@ -52,15 +47,15 @@ _ _ _ _
         - Right click on the live screen capture with OBS and choose Transform -> Center. Then, right click on the capture and choose Transform -> Fit to Screen
         - Note: Wayland users may run into an issue with OBS showing a black screen. Switching to Xorg is a quick fix for the issue.
 5. Alternative to using a standalone camera
-    3. Add your webcam to the bottom corner if you want.
+    1. Add your webcam to the corner if you want.
         - To do so, you can just click on the `+` and adding a video capture device. Resize as desired.
-    4. OBS Studio makes it easy to switch between scenes. If you would like to record a different ‘thing’ for your recording you might want to add scenes and flip through them while recording live.
+    2. OBS Studio makes it easy to switch between scenes. If you would like to record a different ‘thing’ for your recording you might want to add scenes and flip through them while recording live.
 
 _ _ _ _
 
 ## Alternatives
 
-In case the OBS studio does not work for you (f.e. because you're running on Wayland), there are some alternatives.
+If the OBS studio does not work for you (e.g. because you're running on Wayland), there are some alternatives.
 
 ### Using wf-recorder (for Wayland)
 
@@ -80,11 +75,11 @@ In case the OBS studio does not work for you (f.e. because you're running on Way
 3. Start the recording.
     1. Run a terminal in a directory you want to save the video in.
     2. Type into the terminal, and confirm the following command to start the recording of both your screen and audio (microphone+from computer).
-        ```wf-recorder -a -f "my-talk.mp4"```
+        `wf-recorder -a -f "my-talk.mp4"`
         - If you have multiple monitors, please select the one you want to record. Type the number and enter to confirm.
         - If you want the recording to end on its own after 20 minutes, you can prefix the command with `timeout -s INT 1200 wf-recorder ... `
         - If you want to start the recording after 5 seconds, you can prefix the above command with `sleep 5 ; wf-recorder ... `
-        - F.e. the combination of the above would look like: ```sleep 5 ; timeout -s INT 1200 wf-recorder -a -f "my-talk.mp4"```
+        - E.g. the combination of the above would look like: `sleep 5 ; timeout -s INT 1200 wf-recorder -a -f "my-talk.mp4"`
 4. End the recording by pressing `CTRL+C` in the terminal.
 
 
@@ -96,18 +91,13 @@ In case the OBS studio does not work for you (f.e. because you're running on Way
     - Select correct microphone (please check its output).
     - Please select whole screen for recording (to preserve width/height ratio)
 
+### Using external video camera and screen recording
 
-### Using simplescreenrecorder (for Xorg)
-
-1. 
-
-_Note: you can setup your microphone the same way as in (2) in `Using wf-recorder`._
-
-### Using Google Meet
-
-1. 
-
-_Note: you can setup your microphone the same way as in (2) in `Using wf-recorder`._
+1. Additionally to screen recording, you can use an external camera and microphone (even from a phone), and we'll put them together.
+    - In such case, make sure you record audio (voice) in each recording, so we can match them properly.
+    - We'll put the two recordings into a common template ([example](https://www.youtube.com/playlist?list=PLU1vS0speL2Z08BeKSwSqfxPEl3ta5UK3)).
+2. We can also make some video/audio adjustments for you if necessary (raise audio volume, wide angle cropping, start-end trimming).
+    - If you have any wishes, please mention them in CfP portal form.
 
 
 ### Recording audio separately
