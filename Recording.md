@@ -7,6 +7,7 @@ Please report any issues with these instructions [here on github](https://github
   - [Alternatives](#alternatives)
     - [Using wf-recorder (for Wayland)](#using-wf-recorder-for-wayland)
     - [Using QuickTime Player (for macOS)](#using-quicktime-player-for-macos)
+    - [Using external video camera and screen recording](#using-external-video-camera-and-screen-recording)
     - [Recording audio separately](#recording-audio-separately)
 
 ## General instructions
